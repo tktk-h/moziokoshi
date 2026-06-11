@@ -108,6 +108,28 @@ body {
   background: var(--border);
 }
 
+.notice {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 14px;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.notice summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.notice ul {
+  margin: 10px 0 0;
+  padding-left: 1.2em;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .status {
   font-size: 0.9rem;
   color: var(--muted);
