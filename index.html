@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>講義文字起こしノート</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>講義文字起こしノート</h1>
+      <button id="themeToggle" class="icon-btn" title="ダークモード切替">🌙</button>
+    </header>
+
+    <div class="controls">
+      <button id="startBtn" class="btn btn-primary">▶ 開始</button>
+      <button id="stopBtn" class="btn btn-danger" disabled>■ 停止</button>
+      <button id="copyBtn" class="btn btn-secondary">📋 テキストをコピー</button>
+      <button id="saveBtn" class="btn btn-secondary">💾 保存</button>
+      <button id="chatgptBtn" class="btn btn-secondary">🤖 ChatGPTに校正依頼</button>
+      <button id="geminiBtn" class="btn btn-secondary">✨ Geminiに校正依頼</button>
+      <button id="clearBtn" class="btn btn-secondary">🗑 クリア</button>
+    </div>
+
+    <div id="status" class="status">待機中</div>
+
+    <div id="transcript" class="transcript" placeholder="ここに文字起こし結果が表示されます…"><span id="finalText"></span><span id="interimText" class="interim"></span></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
